@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/deku-components/layout"
+    "url": "https://github.com/deku-scrubs/layout"
   },
   "keywords": [
     "deku",
@@ -18,9 +18,9 @@
   "author": "ashaffer (http://github.com/ashaffer)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/deku-components/layout/issues"
+    "url": "https://github.com/deku-scrubs/layout/issues"
   },
-  "homepage": "https://github.com/deku-components/layout",
+  "homepage": "https://github.com/deku-scrubs/layout",
   "browserify": [
     [
       "babelify"
