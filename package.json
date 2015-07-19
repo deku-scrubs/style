@@ -1,26 +1,26 @@
 {
-  "name": "layout",
+  "name": "style",
   "version": "0.1.0",
-  "description": "Layout components for deku",
+  "description": "style components for deku",
   "main": "index.js",
   "scripts": {
     "test": "make test"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/deku-scrubs/layout"
+    "url": "https://github.com/deku-scrubs/style"
   },
   "keywords": [
     "deku",
     "component",
-    "layout"
+    "style"
   ],
   "author": "ashaffer (http://github.com/ashaffer)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/deku-scrubs/layout/issues"
+    "url": "https://github.com/deku-scrubs/style/issues"
   },
-  "homepage": "https://github.com/deku-scrubs/layout",
+  "homepage": "https://github.com/deku-scrubs/style",
   "browserify": {
     "transform": [
       [

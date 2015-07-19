@@ -1,10 +1,10 @@
-# layout
+# style
 
-Deku layout components.  Basically a clone of petehunt/jsxstyle but for deku.
+Deku style components.  Basically a clone of petehunt/jsxstyle but for deku.
 
 ## Usage
 
-Layout elements:
+Display elements:
 
   * Flex
   * Block
@@ -24,7 +24,7 @@ function render() {
 
 ### Composition by containment
 
-However, layout components also accept a special `style` prop, which takes precedence over any of the attribute styles.  This allows you to create your own layout components that expose the same attribute-styling interface as these.  E.g.
+However, style components also accept a special `style` prop, which takes precedence over any of the attribute styles.  This allows you to create your own stylable components that expose the same attribute-styling interface as these.  E.g.
 
 ```javascript
 const MediaBlock = {
