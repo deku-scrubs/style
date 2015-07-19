@@ -8,13 +8,13 @@ import {Flex} from '..'
 
 let container
 
-describe('style', function() {
-  beforeEach(function() {
+describe('style', function () {
+  beforeEach(function () {
     empty(document.body)
     container = document.body.appendChild(document.createElement('div'))
   })
 
-  it('should work', function() {
+  it('should work', function () {
     create(<Flex width='4px'>test</Flex>)
 
     const flex = container.querySelector('div')
@@ -24,9 +24,9 @@ describe('style', function() {
     assert.ok(style.indexOf('width:4px') !== -1)
   })
 
-  it('should allow component mixins', function() {
+  it('should allow component mixins', function () {
     const Button = {
-      render(component) {
+      render (component) {
         const {props} = component
         return <button style={css(props.style)}>{props.text}</button>
       }
@@ -43,11 +43,12 @@ describe('style', function() {
   })
 })
 
-function create(component) {
+function create (component) {
   render(tree(component), container)
 }
 
-function empty(node) {
-  while(node.lastChild)
+function empty (node) {
+  while (node.lastChild) {
     node.removeChild(node.lastChild)
+  }
 }

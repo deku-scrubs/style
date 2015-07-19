@@ -21,6 +21,16 @@
     "url": "https://github.com/deku-scrubs/style/issues"
   },
   "homepage": "https://github.com/deku-scrubs/style",
+  "standard": {
+    "global": [
+      "describe",
+      "it",
+      "beforeEach",
+      "afterEach",
+      "before",
+      "after"
+    ]
+  },
   "browserify": {
     "transform": [
       [
@@ -30,6 +40,7 @@
   },
   "dependencies": {
     "@deku-scrubs/css": "git://github.com/deku-scrubs/css",
+    "@deku-scrubs/standard": "git://github.com/deku-scrubs/standard",
     "object-assign": "^3.0.0",
     "object.map": "^0.2.0"
   },
@@ -37,6 +48,7 @@
     "babelify": "^6.1.3",
     "deku": "^0.4.11",
     "mochify": "^2.10.0",
-    "phantomjs": "^1.9.17"
+    "phantomjs": "^1.9.17",
+    "standard": "^5.0.0-2"
   }
 }

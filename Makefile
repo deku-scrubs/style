@@ -1,18 +1,20 @@
 #
-# Binaries
+# Vars
 #
-MOCHIFY = ./node_modules/.bin/mochify
+
+BIN = ./node_modules/.bin
 
 #
 # Tasks
 #
+
 node_modules: package.json
-	@npm install -d
+	@npm install
 
-test:
-	$(MOCHIFY) --transform babelify --phantomjs ./node_modules/.bin/phantomjs --ui bdd
+test: node_modules
+	@${BIN}/mochify --transform babelify --phantomjs ./node_modules/.bin/phantomjs --ui bdd
 
-#
-# Phony
-#
-.PHONY: test
+validate: node_modules
+	@${BIN}/standard
+
+.PHONY: test validate
