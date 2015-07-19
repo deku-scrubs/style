@@ -8,7 +8,7 @@ import {Flex} from '..'
 
 let container
 
-describe('layout', function() {
+describe('style', function() {
   beforeEach(function() {
     empty(document.body)
     container = document.body.appendChild(document.createElement('div'))
