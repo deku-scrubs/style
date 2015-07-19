@@ -31,7 +31,7 @@
   "dependencies": {
     "object-assign": "^3.0.0",
     "object.map": "^0.2.0",
-    "style": "git://github.com/weo-edu/style"
+    "style": "git://github.com/deku-scrubs/css"
   },
   "devDependencies": {
     "babelify": "^6.1.3",
