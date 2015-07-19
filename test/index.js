@@ -2,7 +2,7 @@
  * Imports
  */
 import {tree, element, render} from 'deku'
-import css from 'css'
+import css from '@deku-scrubs/css'
 import assert from 'assert'
 import {Flex} from '..'
 

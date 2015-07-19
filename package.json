@@ -29,9 +29,9 @@
     ]
   },
   "dependencies": {
+    "@deku-scrubs/css": "git://github.com/deku-scrubs/css",
     "object-assign": "^3.0.0",
-    "object.map": "^0.2.0",
-    "style": "git://github.com/deku-scrubs/css"
+    "object.map": "^0.2.0"
   },
   "devDependencies": {
     "babelify": "^6.1.3",
