@@ -2,7 +2,7 @@
  * Imports
  */
 import {tree, element, render} from 'deku'
-import style from 'style'
+import css from 'css'
 import assert from 'assert'
 import {Flex} from '..'
 
@@ -28,7 +28,7 @@ describe('layout', function() {
     const Button = {
       render(component) {
         const {props} = component
-        return <button style={style(props.style)}>{props.text}</button>
+        return <button style={css(props.style)}>{props.text}</button>
       }
     }
 

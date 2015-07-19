@@ -1,5 +1,5 @@
 {
-  "name": "style",
+  "name": "@deku-scrubs/style",
   "version": "0.1.0",
   "description": "style components for deku",
   "main": "index.js",
