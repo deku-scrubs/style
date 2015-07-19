@@ -21,11 +21,13 @@
     "url": "https://github.com/deku-scrubs/layout/issues"
   },
   "homepage": "https://github.com/deku-scrubs/layout",
-  "browserify": [
-    [
-      "babelify"
+  "browserify": {
+    "transform": [
+      [
+        "babelify"
+      ]
     ]
-  ],
+  },
   "dependencies": {
     "object-assign": "^3.0.0",
     "object.map": "^0.2.0",
