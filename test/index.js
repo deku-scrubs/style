@@ -41,10 +41,33 @@ describe('style', function () {
     assert.ok(styl.indexOf('display:flex') !== -1)
     assert.ok(styl.indexOf('width:4px') !== -1)
   })
+
+  it('should not break defaultProps on re-render', function () {
+    let setState
+    const Component = {
+      render (component, _setState) {
+        setState = _setState
+        return (<Flex width='5px' />)
+      }
+    }
+
+    create(<Component/>)
+
+    assert(checkStyle(container.children[0]))
+    setState({test: true})
+    assert(checkStyle(container.children[0]))
+
+    function checkStyle (el) {
+      return el.attributes.style.value.indexOf('display:flex') !== -1
+    }
+  })
 })
 
 function create (component) {
-  render(tree(component), container)
+  const app = tree(component)
+  app.option('batching', false)
+  render(app, container)
+  return app
 }
 
 function empty (node) {
