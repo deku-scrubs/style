@@ -10,6 +10,7 @@ BIN = ./node_modules/.bin
 
 node_modules: package.json
 	@npm install
+	@touch node_modules
 
 test: node_modules
 	@${BIN}/mochify --transform babelify --phantomjs ./node_modules/.bin/phantomjs --ui bdd
