@@ -3,7 +3,6 @@
  */
 import {tree, element, render} from 'deku'
 import empty from 'component-empty'
-import css from '@deku-scrubs/css'
 import assert from 'assert'
 import {Flex, Block} from '..'
 
@@ -29,7 +28,7 @@ describe('style', function () {
     const Button = {
       render (component) {
         const {props} = component
-        return <button style={css(props.style)}>{props.text}</button>
+        return <button style={props.style}>{props.text}</button>
       }
     }
 
