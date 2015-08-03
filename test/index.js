@@ -2,9 +2,10 @@
  * Imports
  */
 import {tree, element, render} from 'deku'
+import empty from 'component-empty'
 import css from '@deku-scrubs/css'
 import assert from 'assert'
-import {Flex} from '..'
+import {Flex, Block} from '..'
 
 let container
 
@@ -42,7 +43,7 @@ describe('style', function () {
     assert.ok(styl.indexOf('width:4px') !== -1)
   })
 
-  it('should not break defaultProps on re-render', function () {
+  it('should not break default styles on re-render', function () {
     let setState
     const Component = {
       render (component, _setState) {
@@ -61,6 +62,16 @@ describe('style', function () {
       return el.attributes.style.value.indexOf('display:flex') !== -1
     }
   })
+
+  it('should not add excluded properties to style', function () {
+    create(<Block component='button' props={{}} />)
+    const el = container.children[0]
+    const style = el.attributes.style.value
+
+    assert(style.indexOf('component') === -1)
+    assert(style.indexOf('props') === -1)
+    assert(style.indexOf('style') === -1)
+  })
 })
 
 function create (component) {
@@ -68,10 +79,4 @@ function create (component) {
   app.option('batching', false)
   render(app, container)
   return app
-}
-
-function empty (node) {
-  while (node.lastChild) {
-    node.removeChild(node.lastChild)
-  }
 }

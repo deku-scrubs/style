@@ -40,15 +40,16 @@
   },
   "dependencies": {
     "@deku-scrubs/css": "git://github.com/deku-scrubs/css",
-    "@deku-scrubs/standard": "git://github.com/deku-scrubs/standard",
     "object-assign": "^3.0.0",
-    "object.map": "^0.2.0"
+    "object.map": "^0.2.0",
+    "object.omit": "^2.0.0"
   },
   "devDependencies": {
+    "@deku-scrubs/standard": "git://github.com/deku-scrubs/standard",
     "babelify": "^6.1.3",
+    "component-empty": "0.0.1",
     "deku": "^0.4.11",
     "mochify": "^2.10.0",
-    "phantomjs": "^1.9.17",
-    "standard": "^5.0.0-2"
+    "phantomjs": "^1.9.17"
   }
 }
