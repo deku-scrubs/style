@@ -48,8 +48,9 @@
     "@deku-scrubs/standard": "git://github.com/deku-scrubs/standard",
     "babelify": "^6.1.3",
     "component-empty": "0.0.1",
-    "deku": "^0.4.11",
+    "deku": "^0.5.0",
     "mochify": "^2.10.0",
-    "phantomjs": "^1.9.17"
+    "phantomjs": "^1.9.17",
+    "virtual-element": "^1.1.1"
   }
 }

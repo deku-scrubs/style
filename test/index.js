@@ -1,7 +1,8 @@
 /**
  * Imports
  */
-import {tree, element, render} from 'deku'
+import {tree, render} from 'deku'
+import element from 'virtual-element'
 import empty from 'component-empty'
 import assert from 'assert'
 import {Flex, Block} from '..'
