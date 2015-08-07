@@ -2,7 +2,7 @@
  * Imports
  */
 import {tree, render} from 'deku'
-import element from 'virtual-element'
+import element from 'magic-virtual-element'
 import empty from 'component-empty'
 import assert from 'assert'
 import {Flex, Block} from '..'
