@@ -21,8 +21,8 @@ describe('style', function () {
     const flex = container.querySelector('div')
     const style = flex.attributes.style.value
 
-    assert.ok(style.indexOf('display:flex') !== -1)
-    assert.ok(style.indexOf('width:4px') !== -1)
+    assert.ok(style.indexOf('display: flex') !== -1)
+    assert.ok(style.indexOf('width: 4px') !== -1)
   })
 
   it('should allow component mixins', function () {
@@ -39,8 +39,8 @@ describe('style', function () {
     const styl = btn.attributes.style.value
 
     assert.equal(btn.textContent, 'test')
-    assert.ok(styl.indexOf('display:flex') !== -1)
-    assert.ok(styl.indexOf('width:4px') !== -1)
+    assert.ok(styl.indexOf('display: flex') !== -1)
+    assert.ok(styl.indexOf('width: 4px') !== -1)
   })
 
   it('should not break default styles on re-render', function () {
@@ -59,7 +59,7 @@ describe('style', function () {
     assert(checkStyle(container.children[0]))
 
     function checkStyle (el) {
-      return el.attributes.style.value.indexOf('display:flex') !== -1
+      return el.attributes.style.value.indexOf('display: flex') !== -1
     }
   })
 
